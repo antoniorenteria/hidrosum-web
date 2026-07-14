@@ -70,9 +70,11 @@
       container.appendChild(b);
     }
   }
-  spawnBubbles(document.getElementById("heroBubbles"), 26);
-  spawnBubbles(document.querySelector(".cta__bubbles"), 16);
-  spawnBubbles(document.querySelector(".section__bubbles"), 14);
+  // Menos burbujas en pantallas pequeñas: misma magia, mejor rendimiento
+  const isMobile = window.matchMedia("(max-width: 600px)").matches;
+  spawnBubbles(document.getElementById("heroBubbles"), isMobile ? 12 : 26);
+  spawnBubbles(document.querySelector(".cta__bubbles"), isMobile ? 8 : 16);
+  spawnBubbles(document.querySelector(".section__bubbles"), isMobile ? 7 : 14);
 
   /* ── Lightbox de galería ── */
   const lightbox = document.createElement("div");

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Descarga las fotos del local desde el repositorio de GitHub
-# (se mantienen fuera del deploy inline por su peso binario).
+# Descarga todos los assets binarios (fotos, logos SVG, íconos y fuentes)
+# desde el repositorio de GitHub durante el build de Vercel.
 set -e
-BASE="https://raw.githubusercontent.com/antoniorenteria/hidrosum-web/main/assets/img"
-mkdir -p assets/img
-for img in lavadoras.jpg secadoras.jpg hidropuntos.jpg jabon.jpg maquina-detalle.jpg logo-pared.jpg; do
-  curl -fsS -o "assets/img/$img" "$BASE/$img"
-done
-echo "Imágenes descargadas:" && ls -la assets/img
+curl -fsSL https://github.com/antoniorenteria/hidrosum-web/archive/refs/heads/main.tar.gz -o repo.tgz
+tar xzf repo.tgz
+mkdir -p assets
+cp -r hidrosum-web-main/assets/. assets/
+rm -rf repo.tgz hidrosum-web-main
+echo "Assets listos:" && find assets -type f | sort
