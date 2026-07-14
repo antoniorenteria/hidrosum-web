@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-# Descarga todos los assets binarios (fotos, logos SVG, íconos y fuentes)
-# desde el repositorio de GitHub durante el build de Vercel.
+# Build de Vercel: descarga el sitio completo (HTML, CSS, JS, fotos,
+# logos, íconos y fuentes) desde la rama main del repositorio de GitHub.
 set -e
 curl -fsSL https://github.com/antoniorenteria/hidrosum-web/archive/refs/heads/main.tar.gz -o repo.tgz
 tar xzf repo.tgz
-mkdir -p assets
-cp -r hidrosum-web-main/assets/. assets/
+cp -r hidrosum-web-main/. .
 rm -rf repo.tgz hidrosum-web-main
-echo "Assets listos:" && find assets -type f | sort
+echo "Sitio listo:" && find . -type f -not -path "./.git*" | sort
