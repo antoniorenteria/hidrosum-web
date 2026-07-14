@@ -35,7 +35,10 @@ npx serve .
 
 ## ☁️ Despliegue
 
-Desplegado en Vercel como sitio estático (sin configuración de build).
+**Sitio en producción:** https://hidrosum-web.vercel.app
+
+Desplegado en Vercel como sitio estático. El `build.sh` descarga las fotos
+del local desde este repositorio durante el build de Vercel.
 
 ---
 
