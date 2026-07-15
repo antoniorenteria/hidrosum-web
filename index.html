@@ -52,8 +52,8 @@
         <img class="brand__logo brand__logo--morado" src="assets/logo/logo-horizontal-morado.svg" alt="" aria-hidden="true" width="230" height="56">
       </a>
       <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#beneficios">Beneficios</a>
         <a href="#servicios">Servicios</a>
-        <a href="#como-funciona">Cómo funciona</a>
         <a href="#hidropuntos">Hidropuntos</a>
         <a href="#galeria">Galería</a>
         <a href="#ubicacion">Ubicación</a>
@@ -68,33 +68,31 @@
 
   <!-- ═══════════ HERO ═══════════ -->
   <section class="hero" id="inicio">
-    <div class="hero__bubbles" id="heroBubbles" aria-hidden="true"></div>
+    <div class="hero__bubbles bubbles-zone" aria-hidden="true"></div>
     <div class="container hero__inner">
       <div class="hero__copy reveal">
-        <p class="hero__kicker"><img src="assets/iconos/blanco-lavadora-feliz.svg" alt="" aria-hidden="true"> Lavandería autoservicio · Pachuca, Hgo.</p>
+        <p class="hero__kicker">Lavandería autoservicio · Pachuca, Hgo.</p>
         <h1 class="hero__title">Tu lavandería<br><span class="plus">+</span> <em>amigable</em></h1>
-        <p class="hero__sub">Lava, seca y relájate. Máquinas profesionales, Wi-Fi gratis, café calientito y tu mejor amigo peludo es bienvenido. <strong>¡Sigue las burbujas, hidroamigo!</strong></p>
+        <p class="hero__sub">Lava, seca y relájate. <strong>¡Sigue las burbujas, hidroamigo!</strong> 🫧</p>
         <div class="hero__cta">
           <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&query=Hidrosum+Lavander%C3%ADa+Autoservicio+Av.+Piracantos+500+Pachuca" target="_blank" rel="noopener">📍 Cómo llegar</a>
-          <a class="btn btn--ghost" href="https://wa.me/527717129035" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--ghost" href="https://wa.me/527717129035" target="_blank" rel="noopener">💬 WhatsApp</a>
         </div>
-        <ul class="hero__badges">
-          <li><img src="assets/iconos/blanco-wifi.svg" alt="" aria-hidden="true"> Wi-Fi gratis</li>
-          <li><img src="assets/iconos/blanco-cafe.svg" alt="" aria-hidden="true"> Café</li>
-          <li><img src="assets/iconos/blanco-petfriendly.svg" alt="" aria-hidden="true"> Pet friendly</li>
-        </ul>
       </div>
       <div class="hero__media reveal">
         <div class="hero__photo">
-          <img src="assets/img/lavadoras.jpg" alt="Interior de Hidrosum: lavadoras profesionales numeradas con burbujas decorativas en la pared" width="640" height="853">
-          <div class="hero__chip hero__chip--1">🧺 5 lavadoras pro</div>
-          <div class="hero__chip hero__chip--2">🌀 3 secadoras</div>
-          <div class="hero__chip hero__chip--3">✨ Abierto los 7 días</div>
+          <img src="assets/img/lavadoras.jpg" alt="Interior de Hidrosum: lavadoras profesionales con burbujas decorativas en la pared" width="640" height="853">
+          <span class="hero__sticker" aria-hidden="true"><img src="assets/iconos/morado-lavadora-feliz.svg" alt=""></span>
+          <div class="hero__chip hero__chip--1">🧺 5 lavadoras · 3 secadoras</div>
+          <div class="hero__chip hero__chip--2">✨ Abierto los 7 días</div>
         </div>
       </div>
     </div>
     <div class="wave wave--hero" aria-hidden="true">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,110 480,10 720,50 C960,90 1200,30 1440,70 L1440,120 L0,120 Z" fill="var(--bg)"/></svg>
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,60 C180,150 420,-10 720,70 C1020,150 1260,20 1440,90 L1440,150 L0,150 Z" fill="var(--bg)" opacity=".4"/>
+        <path d="M0,90 C200,160 460,20 760,90 C1060,160 1300,50 1440,110 L1440,150 L0,150 Z" fill="var(--bg)"/>
+      </svg>
     </div>
   </section>
 
@@ -106,83 +104,130 @@
     </div>
   </div>
 
+  <!-- ═══════════ BENEFICIOS (carrusel) ═══════════ -->
+  <section class="section section--benefits" id="beneficios">
+    <div class="container">
+      <p class="section__kicker reveal">La experiencia</p>
+      <h2 class="section__title reveal">Beneficios <span class="verde">hidroamigos</span></h2>
+      <p class="section__sub reveal">Desliza y toca un beneficio para ver la galería ✨</p>
+    </div>
+    <div class="carousel-wrap">
+      <div class="carousel" id="benefitCarousel" role="list" aria-label="Beneficios de Hidrosum">
+        <button class="benefit" role="listitem" data-photo="0"><img src="assets/iconos/morado-lavadora.svg" alt=""><span>Lavadoras pro</span></button>
+        <button class="benefit" role="listitem" data-photo="1"><img src="assets/iconos/morado-secadora.svg" alt=""><span>Secado express</span></button>
+        <button class="benefit" role="listitem" data-photo="2"><img src="assets/iconos/morado-recarga.svg" alt=""><span>Jabón en sucursal</span></button>
+        <button class="benefit" role="listitem" data-photo="4"><img src="assets/iconos/morado-wifi.svg" alt=""><span>Wi-Fi gratis</span></button>
+        <button class="benefit" role="listitem" data-photo="4"><img src="assets/iconos/morado-cafe.svg" alt=""><span>Café</span></button>
+        <button class="benefit" role="listitem" data-photo="7"><img src="assets/iconos/morado-petfriendly.svg" alt=""><span>Pet friendly</span></button>
+        <button class="benefit" role="listitem" data-photo="6"><img src="assets/iconos/morado-sala.svg" alt=""><span>Sala de espera</span></button>
+        <button class="benefit" role="listitem" data-photo="3"><img src="assets/iconos/morado-videovigilancia.svg" alt=""><span>Videovigilancia</span></button>
+        <button class="benefit" role="listitem" data-photo="5"><img src="assets/iconos/morado-canasta.svg" alt=""><span>Hidropuntos</span></button>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══════════ SERVICIOS ═══════════ -->
-  <section class="section" id="servicios">
+  <section class="section section--tint" id="servicios">
+    <div class="wave wave--top" aria-hidden="true">
+      <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+        <path d="M0,55 C240,120 520,-15 800,55 C1080,120 1300,10 1440,60 L1440,0 L0,0 Z" fill="var(--bg)" opacity=".45"/>
+        <path d="M0,30 C260,100 540,-20 820,40 C1100,100 1320,0 1440,40 L1440,0 L0,0 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
     <div class="container">
       <p class="section__kicker reveal">Servicios</p>
-      <h2 class="section__title reveal">Lavado <span class="amp">&amp;</span> secado sin complicaciones</h2>
-      <p class="section__sub reveal">Todo lo que necesitas para que tu ropa quede impecable, en un solo lugar y a tu ritmo.</p>
+      <h2 class="section__title reveal">Lavado <span class="amp">&amp;</span> secado <span class="verde">sin complicaciones</span></h2>
       <div class="cards">
         <article class="card reveal">
           <div class="card__icon card__icon--wash"><img src="assets/iconos/blanco-lavadora.svg" alt="" aria-hidden="true"></div>
           <h3>Lavado autoservicio</h3>
-          <p>Lavadoras LG de carga profesional para cargas grandes o pequeñas. Tú elijes el ciclo: frío, tibio, caliente o delicados.</p>
+          <p>Lavadoras LG profesionales. Tú eliges el ciclo.</p>
         </article>
         <article class="card reveal">
           <div class="card__icon card__icon--dry"><img src="assets/iconos/blanco-secadora.svg" alt="" aria-hidden="true"></div>
           <h3>Secado express</h3>
-          <p>Secadoras Domus de alto rendimiento: ropa lista, esponjosa y calientita en minutos, sin importar el clima de Pachuca.</p>
+          <p>Secadoras Domus: ropa esponjosa en minutos.</p>
         </article>
         <article class="card reveal">
           <div class="card__icon card__icon--soap"><img src="assets/iconos/blanco-limpieza.svg" alt="" aria-hidden="true"></div>
           <h3>Jabón y suavizante</h3>
-          <p>¿Se te olvidó el detergente? Tranqui: en sucursal tenemos jabón líquido y suavizante listos para tu carga.</p>
+          <p>Porciones listas para tu carga, en sucursal.</p>
         </article>
         <article class="card reveal">
           <div class="card__icon card__icon--points"><img src="assets/iconos/blanco-pago.svg" alt="" aria-hidden="true"></div>
           <h3>Tarjeta Hidropuntos</h3>
-          <p>Acumula puntos en cada visita y canjéalos por lavadas. Ser hidroamigo tiene recompensa. <a href="#hidropuntos">Conócela →</a></p>
+          <p>Acumula puntos y canjéalos por lavadas. <a href="#hidropuntos">Conócela →</a></p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ═══════════ CÓMO FUNCIONA ═══════════ -->
-  <section class="section section--tint" id="como-funciona">
-    <div class="wave wave--top" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,0 L0,0 Z" fill="var(--bg)"/></svg>
-    </div>
+  <section class="section" id="como-funciona">
     <div class="container">
       <p class="section__kicker reveal">Autoservicio fácil</p>
-      <h2 class="section__title reveal">¿Cómo funciona?</h2>
-      <p class="section__sub reveal">En 4 pasos tu ropa queda como nueva. Sin filas, sin esperas raras, sin dramas.</p>
+      <h2 class="section__title reveal">¿Cómo <span class="verde">funciona</span>?</h2>
       <ol class="steps">
-        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-canasta.svg" alt="Canasta de ropa"></span><h3>Trae tu ropa</h3><p>Llega con tu carga a Av. Piracantos 500. Estacionarte es fácil y hay lugar para tu peludo.</p></li>
-        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-lavadora.svg" alt="Lavadora"></span><h3>Elige tu máquina</h3><p>Escoge una lavadora libre, carga tu ropa y selecciona el ciclo que prefieras.</p></li>
-        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-recarga.svg" alt="Jabón líquido"></span><h3>Agrega el jabón</h3><p>Usa el tuyo o compra jabón y suavizante en sucursal. ¡Las burbujas hacen su magia!</p></li>
-        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-lavadora-feliz.svg" alt="Lavadora feliz"></span><h3>Relájate y listo</h3><p>Wi-Fi y café mientras esperas. Pasa a la secadora y llévate tu ropa limpia y calientita.</p></li>
+        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-canasta.svg" alt="Canasta de ropa"></span><h3>Trae tu ropa</h3><p>Llega a Av. Piracantos 500 con tu carga.</p></li>
+        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-lavadora.svg" alt="Lavadora"></span><h3>Elige tu máquina</h3><p>Escoge lavadora y el ciclo ideal.</p></li>
+        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-recarga.svg" alt="Jabón líquido"></span><h3>Agrega el jabón</h3><p>El tuyo o el nuestro: ¡burbujas!</p></li>
+        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-lavadora-feliz.svg" alt="Lavadora feliz"></span><h3>Relájate y listo</h3><p>Café y Wi-Fi mientras esperas.</p></li>
       </ol>
     </div>
   </section>
 
+  <!-- ═══════════ HIDROAMIGO (filosofía de marca) ═══════════ -->
+  <section class="hidroamigo">
+    <div class="hidroamigo__bubbles bubbles-zone" aria-hidden="true"></div>
+    <div class="container hidroamigo__inner">
+      <div class="hidroamigo__icon reveal" aria-hidden="true">
+        <img src="assets/iconos/blanco-lavadora-feliz.svg" alt="">
+      </div>
+      <div class="hidroamigo__copy reveal">
+        <p class="section__kicker section__kicker--light">Nuestra filosofía</p>
+        <h2>Aquí no eres cliente:<br>eres <em>hidroamigo</em></h2>
+        <p>Lavar debería sentirse ligero. Te recibimos con burbujas, café calientito y una sonrisa — también a tu peludo. 🐶</p>
+        <a class="btn btn--light" href="https://wa.me/527717129035" target="_blank" rel="noopener">Escríbenos 💬</a>
+      </div>
+    </div>
+    <div class="wave wave--hero" aria-hidden="true">
+      <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,70 C200,150 440,0 740,70 C1040,145 1280,25 1440,95 L1440,150 L0,150 Z" fill="var(--bg)" opacity=".4"/>
+        <path d="M0,95 C220,160 480,30 780,95 C1080,160 1310,55 1440,115 L1440,150 L0,150 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+  </section>
+
   <!-- ═══════════ HIDROPUNTOS ═══════════ -->
-  <section class="section section--gradient" id="hidropuntos">
-    <div class="section__bubbles" aria-hidden="true"></div>
+  <section class="section" id="hidropuntos">
     <div class="container split">
       <div class="split__media reveal">
-        <img src="assets/img/hidropuntos.jpg" alt="Tarjeta Hidropuntos de Hidrosum frente a las lavadoras" width="600" height="800" loading="lazy">
+        <img src="assets/img/hidropuntos-tarjetas.jpg" alt="Tarjetas Hidropuntos de Hidrosum con burbujas" width="900" height="1125" loading="lazy">
       </div>
-      <div class="split__copy reveal">
-        <p class="section__kicker section__kicker--light">Programa de lealtad</p>
-        <h2>Hidropuntos: tu lealtad vale lavadas 💳</h2>
-        <p>Cada visita suma. Pide tu tarjeta <strong>Hidropuntos</strong> en sucursal, acumula puntos en cada lavado o secado y canjéalos por servicios gratis.</p>
-        <ul class="checklist">
-          <li>Acumulas en cada lavado y secado</li>
-          <li>Canjeable por lavadas y secadas gratis</li>
-          <li>Promociones exclusivas entre semana</li>
-          <li>Sin costo: solo pídela en el mostrador</li>
+      <div class="split__copy split__copy--light reveal">
+        <p class="section__kicker reveal">Programa de lealtad</p>
+        <h2 class="section__title">Hidropuntos: tu lealtad <span class="verde">vale lavadas</span></h2>
+        <ul class="checklist checklist--light">
+          <li>Acumula puntos en cada visita</li>
+          <li>Canjea lavadas y secadas gratis</li>
+          <li>Promos exclusivas entre semana</li>
         </ul>
-        <a class="btn btn--light" href="https://wa.me/527717129035?text=%C2%A1Hola!%20Quiero%20mi%20tarjeta%20Hidropuntos%20%F0%9F%AB%A7" target="_blank" rel="noopener">Adquiere la tuya</a>
+        <a class="btn btn--solid" href="https://wa.me/527717129035?text=%C2%A1Hola!%20Quiero%20mi%20tarjeta%20Hidropuntos%20%F0%9F%AB%A7" target="_blank" rel="noopener">Adquiere la tuya</a>
       </div>
     </div>
   </section>
 
   <!-- ═══════════ GALERÍA ═══════════ -->
-  <section class="section" id="galeria">
+  <section class="section section--tint" id="galeria">
+    <div class="wave wave--top" aria-hidden="true">
+      <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+        <path d="M0,55 C240,120 520,-15 800,55 C1080,120 1300,10 1440,60 L1440,0 L0,0 Z" fill="var(--bg)" opacity=".45"/>
+        <path d="M0,30 C260,100 540,-20 820,40 C1100,100 1320,0 1440,40 L1440,0 L0,0 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
     <div class="container">
       <p class="section__kicker reveal">Galería</p>
-      <h2 class="section__title reveal">Un vistazo a tu segunda casa 🫧</h2>
-      <p class="section__sub reveal">Espacios limpios, luminosos y llenos de burbujas. Así se ve Hidrosum por dentro.</p>
+      <h2 class="section__title reveal">Tu segunda casa, <span class="verde">por dentro</span> 🫧</h2>
       <div class="gallery">
         <figure class="gallery__item reveal"><img src="assets/img/lavadoras.jpg" alt="Muro de lavadoras profesionales numeradas" loading="lazy"><figcaption>Zona de lavadoras</figcaption></figure>
         <figure class="gallery__item reveal"><img src="assets/img/secadoras.jpg" alt="Secadoras industriales Domus" loading="lazy"><figcaption>Zona de secadoras</figcaption></figure>
@@ -190,25 +235,17 @@
         <figure class="gallery__item reveal"><img src="assets/img/maquina-detalle.jpg" alt="Detalle del tambor de una lavadora LG" loading="lazy"><figcaption>Máquinas impecables</figcaption></figure>
         <figure class="gallery__item reveal"><img src="assets/img/logo-pared.jpg" alt="Isotipo metálico de Hidrosum en la pared turquesa" loading="lazy"><figcaption>Detalles con amor</figcaption></figure>
         <figure class="gallery__item reveal"><img src="assets/img/hidropuntos.jpg" alt="Tarjeta Hidropuntos" loading="lazy"><figcaption>Hidropuntos</figcaption></figure>
+        <figure class="gallery__item reveal"><img src="assets/img/banner-lavado-secado.jpg" alt="Banner de Hidrosum: lavado y secado, ¡visítanos!" loading="lazy"><figcaption>Lavado &amp; secado</figcaption></figure>
+        <figure class="gallery__item reveal"><img src="assets/img/banner-burbujas.jpg" alt="Banner de Hidrosum: ¡sigue las burbujas!" loading="lazy"><figcaption>¡Sigue las burbujas!</figcaption></figure>
       </div>
     </div>
   </section>
 
   <!-- ═══════════ UBICACIÓN & HORARIOS ═══════════ -->
-  <section class="section section--tint" id="ubicacion">
-    <div class="wave wave--top" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,0 L0,0 Z" fill="var(--bg)"/></svg>
-    </div>
+  <section class="section" id="ubicacion">
     <div class="container">
       <p class="section__kicker reveal">Visítanos</p>
-      <h2 class="section__title reveal">Horarios y ubicación</h2>
-      <ul class="amenities reveal" aria-label="Amenidades">
-        <li><img src="assets/iconos/morado-wifi.svg" alt=""> Wi-Fi gratis</li>
-        <li><img src="assets/iconos/morado-cafe.svg" alt=""> Café</li>
-        <li><img src="assets/iconos/morado-petfriendly.svg" alt=""> Pet friendly</li>
-        <li><img src="assets/iconos/morado-sala.svg" alt=""> Sala de espera</li>
-        <li><img src="assets/iconos/morado-videovigilancia.svg" alt=""> Videovigilancia</li>
-      </ul>
+      <h2 class="section__title reveal">Horarios y <span class="verde">ubicación</span></h2>
       <div class="location">
         <div class="location__info reveal">
           <div class="hours">
@@ -223,7 +260,7 @@
           </address>
           <div class="location__actions">
             <a class="btn btn--solid" href="https://www.google.com/maps/search/?api=1&query=Hidrosum+Lavander%C3%ADa+Autoservicio+Av.+Piracantos+500+Pachuca" target="_blank" rel="noopener">Abrir en Google Maps</a>
-            <a class="btn btn--outline" href="https://www.google.com/search?q=Hidrosum+Lavander%C3%ADa+Autoservicio+Pachuca" target="_blank" rel="noopener">Ver perfil de Google</a>
+            <a class="btn btn--outline" href="https://www.google.com/search?q=Hidrosum+Lavander%C3%ADa+Autoservicio+Pachuca" target="_blank" rel="noopener">Perfil de Google</a>
           </div>
         </div>
         <div class="location__map reveal">
@@ -234,34 +271,40 @@
   </section>
 
   <!-- ═══════════ FAQ ═══════════ -->
-  <section class="section" id="faq">
+  <section class="section section--tint section--faq" id="faq">
+    <div class="wave wave--top" aria-hidden="true">
+      <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+        <path d="M0,55 C240,120 520,-15 800,55 C1080,120 1300,10 1440,60 L1440,0 L0,0 Z" fill="var(--bg)" opacity=".45"/>
+        <path d="M0,30 C260,100 540,-20 820,40 C1100,100 1320,0 1440,40 L1440,0 L0,0 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
     <div class="container container--narrow">
       <p class="section__kicker reveal">Dudas frecuentes</p>
-      <h2 class="section__title reveal">Preguntas de hidroamigos</h2>
+      <h2 class="section__title reveal">Preguntas de <span class="verde">hidroamigos</span></h2>
       <div class="faq reveal">
         <details class="faq__item">
           <summary>¿Necesito llevar mi propio jabón?</summary>
-          <p>No es necesario: en sucursal vendemos jabón líquido y suavizante en porciones listas para tu carga. Si prefieres traer el tuyo, también puedes usarlo.</p>
+          <p>No: en sucursal vendemos jabón líquido y suavizante en porciones listas. Si traes el tuyo, también puedes usarlo.</p>
         </details>
         <details class="faq__item">
-          <summary>¿Cuánto tiempo tarda un lavado completo?</summary>
-          <p>Un ciclo de lavado tarda aproximadamente 30–40 minutos y el secado unos 30 minutos más. En alrededor de una hora tienes tu ropa lista, seca y calientita.</p>
+          <summary>¿Cuánto tarda un lavado completo?</summary>
+          <p>Lavado 30–40 min y secado unos 30 min más. En una hora, ropa lista y calientita.</p>
         </details>
         <details class="faq__item">
           <summary>¿Puedo llevar a mi mascota?</summary>
-          <p>¡Claro! Somos <strong>pet friendly</strong> 🐶. Tu amigo peludo es bienvenido mientras lavas, solo cuídalo y mantenlo contigo.</p>
+          <p>¡Claro! Somos <strong>pet friendly</strong> 🐶. Solo mantenlo contigo.</p>
         </details>
         <details class="faq__item">
-          <summary>¿Qué no puedo lavar en las máquinas?</summary>
-          <p>Por seguridad e higiene no se lavan <strong>peluches ni cojines</strong>, ni prendas con residuos inflamables. Nuestro equipo en sucursal te orienta con gusto.</p>
+          <summary>¿Qué no puedo lavar?</summary>
+          <p><strong>Peluches ni cojines</strong>, ni prendas con residuos inflamables. En sucursal te orientamos con gusto.</p>
         </details>
         <details class="faq__item">
           <summary>¿Hay promociones?</summary>
-          <p>Sí, tenemos <strong>promociones entre semana</strong> y beneficios exclusivos con tu tarjeta Hidropuntos. Síguenos en redes para no perderte ninguna.</p>
+          <p>Sí: <strong>promos entre semana</strong> y beneficios con tu tarjeta Hidropuntos. Síguenos en redes.</p>
         </details>
         <details class="faq__item">
           <summary>¿Qué hago mientras espero?</summary>
-          <p>Disfruta el <strong>Wi-Fi gratis</strong> y un <strong>café</strong> en un espacio limpio y cómodo. Muchos hidroamigos aprovechan para trabajar o ponerse al día con sus series.</p>
+          <p><strong>Wi-Fi gratis</strong> y <strong>café</strong> en un espacio limpio y cómodo. Trabaja, lee o ponte al día con tus series.</p>
         </details>
       </div>
     </div>
@@ -269,11 +312,11 @@
 
   <!-- ═══════════ CTA FINAL ═══════════ -->
   <section class="cta">
-    <div class="cta__bubbles" aria-hidden="true"></div>
+    <div class="cta__bubbles bubbles-zone" aria-hidden="true"></div>
     <div class="container cta__inner reveal">
       <img class="cta__icon" src="assets/iconos/blanco-lavadora-feliz.svg" alt="" aria-hidden="true">
       <h2>¡Sigue las burbujas!</h2>
-      <p>Te esperamos con las máquinas listas, el café caliente y el Wi-Fi volando.</p>
+      <p>Máquinas listas, café caliente y Wi-Fi volando.</p>
       <a class="btn btn--light btn--lg" href="https://www.google.com/maps/search/?api=1&query=Hidrosum+Lavander%C3%ADa+Autoservicio+Av.+Piracantos+500+Pachuca" target="_blank" rel="noopener">📍 Visítanos hoy</a>
     </div>
   </section>
@@ -281,7 +324,9 @@
   <!-- ═══════════ FOOTER ═══════════ -->
   <footer class="footer">
     <div class="wave wave--footer" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,30 1440,40 L1440,80 L0,80 Z" fill="#2b1150"/></svg>
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0,45 C300,-10 640,95 980,45 C1200,15 1360,35 1440,45 L1440,90 L0,90 Z" fill="#2b1150"/>
+      </svg>
     </div>
     <div class="container footer__grid">
       <div class="footer__brand">
@@ -292,8 +337,8 @@
       </div>
       <div class="footer__col">
         <h4>Explora</h4>
+        <a href="#beneficios">Beneficios</a>
         <a href="#servicios">Servicios</a>
-        <a href="#como-funciona">Cómo funciona</a>
         <a href="#hidropuntos">Hidropuntos</a>
         <a href="#galeria">Galería</a>
         <a href="#faq">Preguntas frecuentes</a>
@@ -325,7 +370,7 @@
     </div>
     <div class="container footer__bottom">
       <p>© <span id="year"></span> Hidrosum® Lavandería Autoservicio. Todos los derechos reservados.</p>
-      <p>Branding y sitio por <a href="https://dribbble.com/shots/16985368-Hidrosum-Logotipo" target="_blank" rel="noopener">Antbuc Design Studio</a> 💜</p>
+      <p>Branding y sitio por <a href="https://antbuc.vercel.app/index.html" target="_blank" rel="noopener">Antbuc Design Studio</a> 💜</p>
     </div>
   </footer>
 
