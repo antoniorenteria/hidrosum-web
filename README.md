@@ -22,7 +22,7 @@ Av. Piracantos 500 esq. calle Camedor, CP 42088, Col. Piracantos, Pachuca, Hgo.
 ## 🔗 Redes
 
 - [Facebook](https://www.facebook.com/hidrosumlavanderia)
-- [Instagram](https://www.instagram.com/hidrosum/)
+- [Instagram](https://www.instagram.com/hidrosumx/)
 - WhatsApp / Tel: (771) 712 9035
 
 ## 🚀 Desarrollo local
