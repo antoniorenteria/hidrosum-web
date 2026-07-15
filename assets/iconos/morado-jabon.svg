@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 82">
+  <g fill="none" stroke="#5f249f" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- bomba dispensadora -->
+    <path d="M25 24v-8h14v8"/>
+    <path d="M25 18h-9v4"/>
+    <path d="M29 16v-5h6v5"/>
+    <!-- cuello -->
+    <path d="M28 24v6M36 24v6"/>
+    <!-- cuerpo de la botella -->
+    <path d="M23 30h18c3.9 0 7 3.1 7 7v31c0 4.4-3.6 8-8 8H24c-4.4 0-8-3.6-8-8V37c0-3.9 3.1-7 7-7z"/>
+    <!-- jabón líquido dentro -->
+    <path d="M22 52c3.3-3.2 6.7-3.2 10 0s6.7 3.2 10 0"/>
+    <!-- burbujas -->
+    <circle cx="52" cy="13" r="4.2"/>
+    <circle cx="57" cy="24" r="2.6"/>
+  </g>
+  <!-- gota que cae de la bomba -->
+  <path fill="#5f249f" d="M16 26c2.5 3 4 4.9 4 6.8a4 4 0 1 1-8 0c0-1.9 1.5-3.8 4-6.8z"/>
+</svg>

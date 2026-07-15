@@ -6,11 +6,20 @@
   <title>Hidrosum · Lavandería Autoservicio en Pachuca | Tu lavandería + amigable</title>
   <meta name="description" content="Hidrosum, lavandería autoservicio en Pachuca, Hidalgo. Lavado y secado profesional, Wi-Fi gratis, café y pet friendly. Av. Piracantos 500, Col. Piracantos. ¡Sigue las burbujas!">
   <meta name="theme-color" content="#5F249F">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://hidrosum-web.vercel.app/">
   <meta property="og:title" content="Hidrosum · Lavandería Autoservicio en Pachuca">
   <meta property="og:description" content="Tu lavandería + amigable. Lavado y secado autoservicio, Wi-Fi, café y pet friendly. Av. Piracantos 500, Pachuca, Hgo.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/lavadoras.jpg">
+  <meta property="og:url" content="https://hidrosum-web.vercel.app/">
+  <meta property="og:site_name" content="Hidrosum Lavandería Autoservicio">
+  <meta property="og:image" content="https://hidrosum-web.vercel.app/assets/img/lavadoras.jpg">
+  <meta property="og:image:alt" content="Interior de Hidrosum: lavadoras profesionales con burbujas decorativas">
   <meta property="og:locale" content="es_MX">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hidrosum · Lavandería Autoservicio en Pachuca">
+  <meta name="twitter:description" content="Tu lavandería + amigable. Wi-Fi, café y pet friendly. ¡Sigue las burbujas!">
+  <meta name="twitter:image" content="https://hidrosum-web.vercel.app/assets/img/lavadoras.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/logo/isotipo-degradado.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +31,9 @@
     "@type": "LocalBusiness",
     "name": "Hidrosum Lavandería Autoservicio",
     "description": "Lavandería autoservicio en Pachuca, Hidalgo. Lavado y secado profesional, Wi-Fi gratis, café y pet friendly.",
+    "url": "https://hidrosum-web.vercel.app/",
+    "image": "https://hidrosum-web.vercel.app/assets/img/lavadoras.jpg",
+    "logo": "https://hidrosum-web.vercel.app/assets/logo/isotipo-degradado.svg",
     "telephone": "+52 771 712 9035",
     "address": {
       "@type": "PostalAddress",
@@ -96,14 +108,6 @@
     </div>
   </section>
 
-  <!-- ═══════════ MARQUEE ═══════════ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>¡Sigue las burbujas! 🫧</span><span>Wi-Fi gratis 📶</span><span>Café ☕</span><span>Pet friendly 🐶</span><span>Autoservicio 🧺</span><span>Hidropuntos 💳</span><span>Promos entre semana 🏷️</span>
-      <span>¡Sigue las burbujas! 🫧</span><span>Wi-Fi gratis 📶</span><span>Café ☕</span><span>Pet friendly 🐶</span><span>Autoservicio 🧺</span><span>Hidropuntos 💳</span><span>Promos entre semana 🏷️</span>
-    </div>
-  </div>
-
   <!-- ═══════════ BENEFICIOS (carrusel) ═══════════ -->
   <section class="section section--benefits" id="beneficios">
     <div class="container">
@@ -115,13 +119,13 @@
       <div class="carousel" id="benefitCarousel" role="list" aria-label="Beneficios de Hidrosum">
         <button class="benefit" role="listitem" data-photo="0"><img src="assets/iconos/morado-lavadora.svg" alt=""><span>Lavadoras pro</span></button>
         <button class="benefit" role="listitem" data-photo="1"><img src="assets/iconos/morado-secadora.svg" alt=""><span>Secado express</span></button>
-        <button class="benefit" role="listitem" data-photo="2"><img src="assets/iconos/morado-recarga.svg" alt=""><span>Jabón en sucursal</span></button>
+        <button class="benefit" role="listitem" data-photo="2"><img src="assets/iconos/morado-jabon.svg" alt=""><span>Jabón en sucursal</span></button>
         <button class="benefit" role="listitem" data-photo="4"><img src="assets/iconos/morado-wifi.svg" alt=""><span>Wi-Fi gratis</span></button>
         <button class="benefit" role="listitem" data-photo="4"><img src="assets/iconos/morado-cafe.svg" alt=""><span>Café</span></button>
         <button class="benefit" role="listitem" data-photo="7"><img src="assets/iconos/morado-petfriendly.svg" alt=""><span>Pet friendly</span></button>
         <button class="benefit" role="listitem" data-photo="6"><img src="assets/iconos/morado-sala.svg" alt=""><span>Sala de espera</span></button>
         <button class="benefit" role="listitem" data-photo="3"><img src="assets/iconos/morado-videovigilancia.svg" alt=""><span>Videovigilancia</span></button>
-        <button class="benefit" role="listitem" data-photo="5"><img src="assets/iconos/morado-canasta.svg" alt=""><span>Hidropuntos</span></button>
+        <button class="benefit" role="listitem" data-photo="5"><img src="assets/iconos/morado-pago.svg" alt=""><span>Hidropuntos</span></button>
       </div>
     </div>
   </section>
@@ -149,7 +153,7 @@
           <p>Secadoras Domus: ropa esponjosa en minutos.</p>
         </article>
         <article class="card reveal">
-          <div class="card__icon card__icon--soap"><img src="assets/iconos/blanco-limpieza.svg" alt="" aria-hidden="true"></div>
+          <div class="card__icon card__icon--soap"><img src="assets/iconos/blanco-jabon.svg" alt="" aria-hidden="true"></div>
           <h3>Jabón y suavizante</h3>
           <p>Porciones listas para tu carga, en sucursal.</p>
         </article>
@@ -170,7 +174,7 @@
       <ol class="steps">
         <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-canasta.svg" alt="Canasta de ropa"></span><h3>Trae tu ropa</h3><p>Llega a Av. Piracantos 500 con tu carga.</p></li>
         <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-lavadora.svg" alt="Lavadora"></span><h3>Elige tu máquina</h3><p>Escoge lavadora y el ciclo ideal.</p></li>
-        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-recarga.svg" alt="Jabón líquido"></span><h3>Agrega el jabón</h3><p>El tuyo o el nuestro: ¡burbujas!</p></li>
+        <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-jabon.svg" alt="Jabón líquido"></span><h3>Agrega el jabón</h3><p>El tuyo o el nuestro: ¡burbujas!</p></li>
         <li class="step reveal"><span class="step__icon"><img src="assets/iconos/morado-lavadora-feliz.svg" alt="Lavadora feliz"></span><h3>Relájate y listo</h3><p>Café y Wi-Fi mientras esperas.</p></li>
       </ol>
     </div>
@@ -370,7 +374,7 @@
     </div>
     <div class="container footer__bottom">
       <p>© <span id="year"></span> Hidrosum® Lavandería Autoservicio. Todos los derechos reservados.</p>
-      <p>Branding y sitio por <a href="https://antbuc.vercel.app/index.html" target="_blank" rel="noopener">Antbuc Design Studio</a> 💜</p>
+      <p>Branding y sitio por <a href="https://antbuc.vercel.app/index.html" target="_blank" rel="noopener">Antbuc Branding Design</a> 💜</p>
     </div>
   </footer>
 
