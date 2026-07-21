@@ -2,7 +2,7 @@
 # Build de Vercel: descarga el sitio completo (HTML, CSS, JS, fotos,
 # logos, íconos y fuentes) desde la rama main del repositorio de GitHub
 # y lo deja en public/ (nunca sobrescribe este script mientras corre).
-# Redeploy trigger: a3df646 (quita pet friendly, 8 lavadoras/4 secadoras)
+# Redeploy trigger: fee023e (quita última mención a mascotas)
 set -e
 curl -fsSL https://github.com/antoniorenteria/hidrosum-web/archive/refs/heads/main.tar.gz -o repo.tgz
 tar xzf repo.tgz
