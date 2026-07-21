@@ -17,7 +17,7 @@ Sitio web oficial de **Hidrosum**, lavandería autoservicio en Pachuca, Hidalgo,
 Av. Piracantos 500 esq. calle Camedor, CP 42088, Col. Piracantos, Pachuca, Hgo.
 
 - Lunes a sábado: 07:00 – 21:00 hrs
-- Domingos: 07:00 – 17:00 hrs
+- Domingos: 07:00 – 16:00 hrs
 
 ## 🔗 Redes
 
