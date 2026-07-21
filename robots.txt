@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hidrosum-web.vercel.app/sitemap.xml
+Sitemap: https://www.hidrosum.com/sitemap.xml
